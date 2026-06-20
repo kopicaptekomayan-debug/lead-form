@@ -1,7 +1,7 @@
 const SUPABASE_URL = "https://nrawsieotdenqpebubfm.supabase.co";
 const SUPABASE_KEY = "sb_publishable_89Z-cQgaR4twyqSKsa0PVw_x6yYuFRh";
 
-document.getElementById("leadForm").addEventListener("submit", async function(e){
+document.getElementById("leadForm").addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const data = {
@@ -25,5 +25,5 @@ document.getElementById("leadForm").addEventListener("submit", async function(e)
   const text = await res.text();
 
   document.getElementById("result").innerText =
-    res.ok ? "Berhasil dikirim!" : "Error: " + text;
+    res.ok ? "Terkirim ✔" : "Error: " + text;
 });
