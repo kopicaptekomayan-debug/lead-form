@@ -1,73 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lead Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lead Form Embed</title>
 
-  <style>
-    body{
-      font-family: Arial;
-      background: linear-gradient(135deg,#4f46e5,#06b6d4);
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-    }
+<style>
+body{
+  font-family: Arial;
+  margin:0;
+  padding:0;
+}
 
-    .card{
-      background:white;
-      padding:25px;
-      border-radius:15px;
-      width:100%;
-      max-width:420px;
-      box-shadow:0 10px 30px rgba(0,0,0,0.2);
-    }
+.embed-box{
+  width:100%;
+  max-width:500px;
+}
 
-    input, textarea{
-      width:100%;
-      margin:10px 0;
-      padding:12px;
-      border:1px solid #ddd;
-      border-radius:10px;
-    }
+input, textarea{
+  width:100%;
+  padding:10px;
+  margin:6px 0;
+  border:1px solid #ddd;
+  border-radius:8px;
+  font-size:14px;
+}
 
-    button{
-      width:100%;
-      padding:12px;
-      background:#4f46e5;
-      color:white;
-      border:none;
-      border-radius:10px;
-      cursor:pointer;
-    }
+button{
+  width:100%;
+  padding:10px;
+  background:#4f46e5;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
 
-    button:hover{
-      background:#4338ca;
-    }
+button:hover{
+  background:#4338ca;
+}
 
-    #result{
-      margin-top:10px;
-      text-align:center;
-    }
-  </style>
+#result{
+  margin-top:8px;
+  font-size:13px;
+}
+</style>
 </head>
 
 <body>
 
-<div class="card">
-  <h2>Form Order</h2>
+<div class="embed-box">
 
   <form id="leadForm">
     <input type="text" id="name" placeholder="Nama" required>
     <input type="text" id="whatsapp" placeholder="WhatsApp" required>
     <input type="email" id="email" placeholder="Email (opsional)">
-    <textarea id="kebutuhan" placeholder="Ceritakan kebutuhan Anda" rows="5"></textarea>
+    <textarea id="kebutuhan" placeholder="Ceritakan kebutuhan Anda" rows="4"></textarea>
 
     <button type="submit">Kirim</button>
   </form>
 
   <div id="result"></div>
+
 </div>
 
 <script src="script.js"></script>
